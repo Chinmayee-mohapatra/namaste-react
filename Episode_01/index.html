@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Namaste React Ep:01</title>
+</head>
+<body>
+
+    <!-- React is a library and not a framework. 
+    Framework comes with a lot of baggage with it, React doesn't need any of those. We can use the cdn links to get started with REACT.
+    We can even use a small piece of REACT code with an application made with other language(jQuery).
+    -->
+
+    <p>Top portion of the root div</p>
+
+    <div id="root">
+        <!-- <h1>
+            Hello World!
+        </h1> -->
+        <h1>WHat happens when the react root.render() is executed?</h1>
+        <p>Once the root.render() is executed the previous html code inside of the div(with id="root") will be replaced by the new code.</p>
+    </div>
+
+    <p>Bottom portion of the root div</p>
+    <!-- All the changes are made only to the root div since we are only applying render withing that block of html.
+    So React is a library of JS which along with building large scale applications can also help make changes to exixting project,
+    by only modifying a small part of the application. We can use the cdn links to make react work.
+    -->
+
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World from Javascript!";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <!-- This line contains the code react code which is written in javaScript itself (because at the end of the day REACT is a JS library). -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     <!-- The above line contains the react code that acts as a bridge between the react and the browser. It helps make changes to the DOM environment.
+     using the above links React has been configured in our project and we can use the superpowers of React to create Large Scale production ready applications. -->
+    
+    <script src="./App.js"></script>
+
+    <!-- First react cdn should be used and then App.js, because App.js file is using react, so react must be imported before the
+    App.js file. Hence, sequence matters.  -->
+</body>
+</html>
