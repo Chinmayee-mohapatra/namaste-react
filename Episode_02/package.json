@@ -1,0 +1,16 @@
+{
+  "name": "episode_01",
+  "version": "1.0.0",
+  "description": "This is Namaste React Episode 01",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Chinmayee-mohapatra/namaste-react.git)"
+  },
+  "keywords": [],
+  "author": "Chinmayee Mohapatra",
+  "license": "ISC"
+}
